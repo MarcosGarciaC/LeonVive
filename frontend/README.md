@@ -16,6 +16,10 @@ Abre la URL local que imprime Vite (habitualmente `http://localhost:5173`). **No
 
 Para compilar: `npm run build`. Para comprobar estilos y JSX: `npm run lint`.
 
+## Nuevo: catálogo de temas
+
+La página inicial incluye acceso a las **7 páginas de temas** a través de `/temas`. Las 35 fichas de demostración están descritas en `GUIA_TEMAS.md`, con rutas y referencias de contenido.
+
 ## Qué funciona
 
 - Navegación adaptable a escritorio y móvil.

@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { celebrations, curiosities, people, places, story } from '../../data'
 import './Dashboard.css'
 
@@ -212,6 +213,7 @@ const questions = [
 ]
 
 function Dashboard({ NavbarComponent }) {
+  const navigateTo = useNavigate()
   const [visited, setVisited] = useState(() => stored('ecos:lecturas', []))
   const [savedPlaces, setSavedPlaces] = useState(() =>
     stored('ecos:guardados', []),
@@ -331,6 +333,10 @@ function Dashboard({ NavbarComponent }) {
   function navigate(id) {
     setMenuOpen(false)
     setModal(null)
+    if (id === 'temas') {
+      navigateTo('/temas')
+      return
+    }
     if (['biblioteca', 'juegos', 'mi-espacio', 'rutas', 'help'].includes(id)) {
       setModal({ type: id })
       return

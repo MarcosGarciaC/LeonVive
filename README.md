@@ -46,3 +46,8 @@ Esta es una **demostración frontend React**. El inicio de sesión sin contrase�
 - `src/App.css`, `src/index.css` — estilo y diseño responsive.
 - `src/data.js` — contenidos de cultura, lugares y tradiciones.
 - `public/images` — recursos gráficos locales y logo.
+
+
+## Extensión: Hub de temas
+
+Se añadieron `/temas` y siete páginas `/temas/:tema` (historia, personajes, gastronomia, cultura, tradiciones, aves y leyendas). Lee `frontend/GUIA_TEMAS.md` para saber cómo usarlas y editar las fichas.

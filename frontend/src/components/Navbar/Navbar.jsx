@@ -2,6 +2,7 @@ import './Navbar.css'
 
 const sections = [
   { id: 'inicio', text: 'Inicio' },
+  { id: 'temas', text: 'Temas' },
   { id: 'descubre', text: 'Descubrir León' },
   { id: 'lugares', text: 'Lugares' },
   { id: 'calendario', text: 'Tradiciones' },
