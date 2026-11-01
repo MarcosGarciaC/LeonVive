@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { celebrations, curiosities, people, places, story } from '../../data'
 import './Dashboard.css'
+import JuegosDestacado from '../Juegos/JuegosDestacado'
 
 const MONTHS = [
   'enero',
@@ -337,6 +338,10 @@ function Dashboard({ NavbarComponent }) {
       navigateTo('/temas')
       return
     }
+    if (id === 'juegos') {
+  navigateTo('/juegos')
+  return
+}
     if (['biblioteca', 'juegos', 'mi-espacio', 'rutas', 'help'].includes(id)) {
       setModal({ type: id })
       return
@@ -829,6 +834,8 @@ function Dashboard({ NavbarComponent }) {
             </div>
           </div>
         </section>
+
+        <JuegosDestacado />
 
         <section className="closing-section">
           <div className="closing-image" />

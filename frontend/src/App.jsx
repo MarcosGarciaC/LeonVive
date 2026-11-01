@@ -2,6 +2,7 @@ import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import Navbar from './components/Navbar/Navbar'
 import Dashboard from './pages/Dashboard/Dashboard'
 import { TopicPage, TopicsHub } from './pages/Topics/Topics'
+import Juegos from "./pages/Juegos/Juegos.jsx";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Route path="/temas" element={<TopicsHub />} />
         <Route path="/temas/:tema" element={<TopicPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
+        <Route path="/juegos/*" element={<Juegos />} />
       </Routes>
     </BrowserRouter>
   )
