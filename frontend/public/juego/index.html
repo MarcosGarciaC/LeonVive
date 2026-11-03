@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#1d1b3a">
+<title>Ecos de León</title>
+<link rel="icon" href="img/icono.png">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+<div id="marco">
+  <div id="escenario">
+    <canvas id="lienzo" width="640" height="360"></canvas>
+    <div id="ui"></div>
+    <div id="tactil" class="oculto">
+      <div class="cruz">
+        <button data-k="izq" aria-label="Izquierda">◀</button>
+        <button data-k="der" aria-label="Derecha">▶</button>
+      </div>
+      <div class="acciones">
+        <button data-k="accion" class="b-accion" aria-label="Acción">★</button>
+        <button data-k="salto" class="b-salto" aria-label="Saltar">▲</button>
+      </div>
+    </div>
+    <div id="tactil-laberinto" class="oculto">
+      <button data-k="arr" class="l-arr" aria-label="Arriba">▲</button>
+      <button data-k="izq" class="l-izq" aria-label="Izquierda">◀</button>
+      <button data-k="der" class="l-der" aria-label="Derecha">▶</button>
+      <button data-k="aba" class="l-aba" aria-label="Abajo">▼</button>
+    </div>
+    <div id="sello">PENDIENTE DE APROBACIÓN</div>
+  </div>
+</div>
+<div id="girar"><div><div class="girar-icono">📱↻</div><p>Gira tu teléfono</p></div></div>
+
+<script src="js/version.js"></script>
+<script src="js/util.js"></script>
+<script src="js/datos.js"></script>
+<script src="js/sprites.js"></script>
+<script src="js/arte.js"></script>
+<script src="js/iconos.js"></script>
+<script src="js/nivel.js"></script>
+<script src="js/mapa.js"></script>
+<script src="js/pantallas.js"></script>
+<script src="js/minijuegos/memoria.js"></script>
+<script src="js/minijuegos/sopa.js"></script>
+<script src="js/minijuegos/ajedrez.js"></script>
+<script src="js/minijuegos/rompecabezas.js"></script>
+<script src="js/minijuegos/laberinto.js"></script>
+<script src="js/griteria.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

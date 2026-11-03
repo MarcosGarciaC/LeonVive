@@ -7,11 +7,11 @@ const sections = [
   { id: 'lugares', text: 'Lugares' },
   { id: 'calendario', text: 'Tradiciones' },
   { id: 'poesia', text: 'Literatura' },
+  { id: 'juegos', text: 'Juegos' },
 ]
 
 const extraSections = [
   { id: 'biblioteca', text: 'Biblioteca' },
-  { id: 'juegos', text: 'Juegos' },
   { id: 'mi-espacio', text: 'Mi espacio' },
 ]
 
