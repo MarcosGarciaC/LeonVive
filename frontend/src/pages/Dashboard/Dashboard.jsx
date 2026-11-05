@@ -498,7 +498,7 @@ function Dashboard({ NavbarComponent }) {
             </p>
             <button
               className="underlined-link"
-              onClick={() => openStory('origen')}
+              onClick={() => navigateTo('/temas/historia')}
             >
               Conoce nuestra historia <Icon name="arrow" size={17} />
             </button>
@@ -687,7 +687,7 @@ function Dashboard({ NavbarComponent }) {
             </p>
             <button
               className="underlined-link link-light"
-              onClick={() => openStory('ruben')}
+              onClick={() => navigateTo('/temas/personajes')}
             >
               Descubre su historia <Icon name="arrow" size={18} />
             </button>
@@ -825,7 +825,7 @@ function Dashboard({ NavbarComponent }) {
                   <p>{selected.description}</p>
                   <button
                     className="underlined-link"
-                    onClick={() => setModal({ type: 'event', id: selected.id })}
+                    onClick={() => navigateTo('/temas/tradiciones')}
                   >
                     Conoce esta tradición <Icon name="arrow" size={16} />
                   </button>
@@ -993,10 +993,6 @@ function Dashboard({ NavbarComponent }) {
                       </span>
                       <h2 id="dialog-title">{place.title}</h2>
                       <p>{place.description}</p>
-                      <p className="modal-metadata">
-                        <Icon name="check" size={16} />
-                        {place.source} · Según el informe cultural
-                      </p>
                       <div className="modal-buttons">
                         <button
                           onClick={() => toggleFavorite(place.id)}
@@ -1063,10 +1059,6 @@ function Dashboard({ NavbarComponent }) {
                             : item.id === 'ruben'
                               ? 'Rubén Darío creció en León desde sus primeros días. La casa de su niñez alberga hoy el Museo-Archivo Rubén Darío, y su tumba se encuentra en la Catedral. Su obra transformó la poesía en lengua española.'
                               : 'La Gigantona, las alfombras pasionarias, la Gritería Chiquita y La Purísima son tradiciones vivas que forman parte del calendario cultural leonés.'}
-                      </p>
-                      <p className="modal-metadata">
-                        <Icon name="check" size={16} />
-                        Información documentada en el informe de identidad
                       </p>
                       <button
                         className="filled-action"
